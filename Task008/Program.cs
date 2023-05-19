@@ -11,7 +11,7 @@ if (number == 1)
 }
 else
 {
-int i = 2;
+    int i = 2;
     do
     {
         Console.Write($"{i} ");
