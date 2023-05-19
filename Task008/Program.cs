@@ -5,10 +5,17 @@
 Console.WriteLine("Введите натуральное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int i = 2;
-do
+if (number == 1)
 {
-    Console.Write($"{i} ");
-    i = i + 2;
+    Console.WriteLine("До числа 1 нет чётных чисел");
 }
-while (i <= number);
+else
+{
+int i = 2;
+    do
+    {
+        Console.Write($"{i} ");
+        i = i + 2;
+    }
+    while (i <= number);
+}
