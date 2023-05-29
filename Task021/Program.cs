@@ -28,5 +28,5 @@ double x2 = EnterCoordinate("Введите координату X второй 
 double y2 = EnterCoordinate("Введите координату Y второй точки: ");
 double z2 = EnterCoordinate("Введите координату Z второй точки: ");
 
-double distance = Math.Round(Distance(x1, y1, z1, x2, y2, z2), 2, MidpointRounding.ToZero);
-Console.WriteLine($"Расстояние между точками равно: {distance}");
+double distance = Distance(x1, y1, z1, x2, y2, z2);
+Console.WriteLine($"Расстояние между точками равно: {Math.Round(distance, 2, MidpointRounding.ToZero)}");
