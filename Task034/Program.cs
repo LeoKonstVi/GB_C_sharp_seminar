@@ -13,16 +13,6 @@ int[] CreateFillArray(int size, int min, int max)
     return arr;
 }
 
-int CountEvenNumbers(int[] array)
-{
-    int count = 0;
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] % 2 == 0) count++;
-    }
-    return count;
-}
-
 void PrintArray(int[] arr)
 {
     int length = arr.Length;
@@ -35,6 +25,16 @@ void PrintArray(int[] arr)
             Console.Write($"{arr[i]}");
     }
     Console.WriteLine("]");
+}
+
+int CountEvenNumbers(int[] array)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] % 2 == 0) count++;
+    }
+    return count;
 }
 
 int[] array = CreateFillArray(10, 100, 999);
