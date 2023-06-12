@@ -48,7 +48,7 @@ Console.WriteLine("Для получения элемента массива");
 int row = Input("Введите номер строки: ");
 int column = Input("Введите номер столбца: ");
 
-if (row < array2D.GetLength(0) && column < array2D.GetLength(1))
+if (0 <= row && row < array2D.GetLength(0) && 0 <= column && column < array2D.GetLength(1))
 {
     Console.WriteLine($"Элемент [{row}, {column}] равен: {array2D[row, column]}");
 }
