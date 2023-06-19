@@ -42,7 +42,7 @@ void DescendingOrderRowElements(int[,] arr)
     for (int i = 0; i < arr.GetLength(0); i++) // итератор строк
     {
         // пузырьковая сортировка по строке
-        for (int k = arr.GetLength(1); k > 0; k--) // итератор для последнего элемента в строке
+        for (int k = arr.GetLength(1); k > 1; k--) // итератор для последнего элемента в строке
         {
             for (int j = 1; j < k; j++) // итератор по столбцам
             {
@@ -53,7 +53,6 @@ void DescendingOrderRowElements(int[,] arr)
                     arr[i, j - 1] = temp;
                 }
             }
-            // k = k - 1;
         }
     }
 }
